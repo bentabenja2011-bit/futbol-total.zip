@@ -1,0 +1,12 @@
+[build]
+  command = "python3 -m zipfile -e futbol-total.zip site"
+  publish = "site/futbol-total/public"
+  functions = "site/futbol-total/netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
