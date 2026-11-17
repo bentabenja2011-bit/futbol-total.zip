@@ -1,5 +1,5 @@
 [build]
-  command = "python3 -m zipfile -e futbol-total.zip site"
+  command = "python3 -m zipfile -e 'futbol-total (2).zip' site"
   publish = "site/futbol-total/public"
   functions = "site/futbol-total/netlify/functions"
 
